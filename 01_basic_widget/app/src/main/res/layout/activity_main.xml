@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.sunrin.basic_widget.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_mission01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="mission01" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="문제 1\n\n* 입력창에 글자를 입력후 확인 버튼을 누르면 텍스트에 입력된다.\n* 텍스트, 입력창, 버튼의 글자색은 달라야한다.\n* 입력창에 아무런 값이 없을때는 '입력해주세요' 라는 문구가 뜬다"
+            android:textColor="#000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_mission02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="mission02" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="문제 2\n\n* 입력창에 자신의 전화번호를 입력후 확인 버튼을 누르면 다음화면으로 넘어간다.\n* 시스템 전화번호와 전화번호를 비교해 맞는지 틀린지 출력한다\n* 뒤로가기를 눌러 전화면으로 돌아오면 비교결과를 출력해준다"
+            android:textColor="#000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_mission03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="mission03" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="문제 3\n\n* 가운데 버튼 하나를 만든다.\n* 한번 누를때마다 숫자가 1씩 증가한다\n* SharedPreferences를 사용하여 앱을 껏다켜도 값이 저장되도록한다"
+            android:textColor="#000" />
+    </LinearLayout>
+
+</LinearLayout>
