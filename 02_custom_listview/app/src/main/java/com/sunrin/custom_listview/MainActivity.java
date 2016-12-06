@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class MainActivity extends Activity implements View.OnClickListener {
 
-    private Button mButtonListView, mButtonGridView;
+    private Button mButtonListView, mButtonListViewViewHolder, mButtonListViewViewHolder2, mButtonGridView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,9 +16,13 @@ public class MainActivity extends Activity implements View.OnClickListener {
         setContentView(R.layout.activity_main);
 
         mButtonListView = (Button) findViewById(R.id.btn_list_view);
+        mButtonListViewViewHolder = (Button) findViewById(R.id.btn_list_view_view_holder);
+        mButtonListViewViewHolder2 = (Button) findViewById(R.id.btn_list_view_view_holder2);
         mButtonGridView = (Button) findViewById(R.id.btn_grid_view);
 
         mButtonListView.setOnClickListener(this);
+        mButtonListViewViewHolder.setOnClickListener(this);
+        mButtonListViewViewHolder2.setOnClickListener(this);
         mButtonGridView.setOnClickListener(this);
     }
 
@@ -27,6 +31,14 @@ public class MainActivity extends Activity implements View.OnClickListener {
         switch (view.getId()) {
             case R.id.btn_list_view:
                 startActivity(new Intent(MainActivity.this, ListViewActivity.class));
+                break;
+
+            case R.id.btn_list_view_view_holder:
+                startActivity(new Intent(MainActivity.this, ListViewViewHolderActivity.class));
+                break;
+
+            case R.id.btn_list_view_view_holder2:
+                startActivity(new Intent(MainActivity.this, ListViewViewHolderActivity2.class));
                 break;
 
             case R.id.btn_grid_view:

@@ -17,6 +17,18 @@
         android:text="ListView" />
 
     <Button
+        android:id="@+id/btn_list_view_view_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ListView ViewHolder" />
+
+    <Button
+        android:id="@+id/btn_list_view_view_holder2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ListView ViewHolder2" />
+
+    <Button
         android:id="@+id/btn_grid_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

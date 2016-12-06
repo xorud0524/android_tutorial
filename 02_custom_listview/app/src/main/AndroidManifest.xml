@@ -19,6 +19,10 @@
         </activity>
         <activity android:name=".GridViewActivity" >
         </activity>
+        <activity android:name=".ListViewViewHolderActivity" >
+        </activity>
+        <activity android:name=".ListViewViewHolderActivity2" >
+        </activity>
     </application>
 
 </manifest>
